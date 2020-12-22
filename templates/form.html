@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Input Form{% endblock %}
+
+{% block content %}
+<h1>Madlibs!</h1>
+<h2>Enter words for the following: </h2>
+<form action='/story'>
+    <label class="descriptors">Place: </label>
+    <input type="text" placeholder="Place" name ="place">
+    <label class="descriptors">Noun: </label>
+    <input type="text" placeholder="Noun" name ="noun">
+    <label class="descriptors">Verb: </label>
+    <input type="text" placeholder="Verb" name ="verb">
+    <label class="descriptors">Adjective: </label>
+    <input type="text" placeholder="Adjective" name ="adjective">
+    <label class="descriptors">Plural Noun: </label>
+    <input type="text" placeholder="plural" name ="plural">
+    <button id="submit">Submit</button>
+</form>
+{% endblock %}
+
